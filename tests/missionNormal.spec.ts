@@ -31,6 +31,7 @@ import dappwright, { Dappwright, MetaMaskWallet } from "@tenkeylabs/dappwright";
       await use(context);
     },
 
+    //we
     wallet: async ({ context }, use) => {
       const metamask = await dappwright.getWallet("metamask", context);
 
