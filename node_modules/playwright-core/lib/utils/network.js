@@ -4,19 +4,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.NET_DEFAULT_TIMEOUT = void 0;
-exports.constructURLBasedOnBaseURL = constructURLBasedOnBaseURL;
+exports.createHttp2Server = createHttp2Server;
 exports.createHttpServer = createHttpServer;
 exports.createHttpsServer = createHttpsServer;
 exports.fetchData = fetchData;
 exports.httpRequest = httpRequest;
-exports.urlMatches = urlMatches;
-exports.urlMatchesEqual = urlMatchesEqual;
+exports.isURLAvailable = isURLAvailable;
 var _http = _interopRequireDefault(require("http"));
 var _https = _interopRequireDefault(require("https"));
+var _http2 = _interopRequireDefault(require("http2"));
 var _utilsBundle = require("../utilsBundle");
 var _url = _interopRequireDefault(require("url"));
-var _rtti = require("./rtti");
-var _glob = require("./glob");
 var _happyEyeballs = require("./happy-eyeballs");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 /**
@@ -101,36 +99,6 @@ function fetchData(params, onError) {
     }, reject);
   });
 }
-function urlMatchesEqual(match1, match2) {
-  if ((0, _rtti.isRegExp)(match1) && (0, _rtti.isRegExp)(match2)) return match1.source === match2.source && match1.flags === match2.flags;
-  return match1 === match2;
-}
-function urlMatches(baseURL, urlString, match) {
-  if (match === undefined || match === '') return true;
-  if ((0, _rtti.isString)(match) && !match.startsWith('*')) match = constructURLBasedOnBaseURL(baseURL, match);
-  if ((0, _rtti.isString)(match)) match = (0, _glob.globToRegex)(match);
-  if ((0, _rtti.isRegExp)(match)) return match.test(urlString);
-  if (typeof match === 'string' && match === urlString) return true;
-  const url = parsedURL(urlString);
-  if (!url) return false;
-  if (typeof match === 'string') return url.pathname === match;
-  if (typeof match !== 'function') throw new Error('url parameter should be string, RegExp or function');
-  return match(url);
-}
-function parsedURL(url) {
-  try {
-    return new URL(url);
-  } catch (e) {
-    return null;
-  }
-}
-function constructURLBasedOnBaseURL(baseURL, givenURL) {
-  try {
-    return new URL(givenURL, baseURL).toString();
-  } catch (e) {
-    return givenURL;
-  }
-}
 function createHttpServer(...args) {
   const server = _http.default.createServer(...args);
   decorateServer(server);
@@ -140,6 +108,42 @@ function createHttpsServer(...args) {
   const server = _https.default.createServer(...args);
   decorateServer(server);
   return server;
+}
+function createHttp2Server(...args) {
+  const server = _http2.default.createSecureServer(...args);
+  decorateServer(server);
+  return server;
+}
+async function isURLAvailable(url, ignoreHTTPSErrors, onLog, onStdErr) {
+  let statusCode = await httpStatusCode(url, ignoreHTTPSErrors, onLog, onStdErr);
+  if (statusCode === 404 && url.pathname === '/') {
+    const indexUrl = new URL(url);
+    indexUrl.pathname = '/index.html';
+    statusCode = await httpStatusCode(indexUrl, ignoreHTTPSErrors, onLog, onStdErr);
+  }
+  return statusCode >= 200 && statusCode < 404;
+}
+async function httpStatusCode(url, ignoreHTTPSErrors, onLog, onStdErr) {
+  return new Promise(resolve => {
+    onLog === null || onLog === void 0 || onLog(`HTTP GET: ${url}`);
+    httpRequest({
+      url: url.toString(),
+      headers: {
+        Accept: '*/*'
+      },
+      rejectUnauthorized: !ignoreHTTPSErrors
+    }, res => {
+      var _res$statusCode;
+      res.resume();
+      const statusCode = (_res$statusCode = res.statusCode) !== null && _res$statusCode !== void 0 ? _res$statusCode : 0;
+      onLog === null || onLog === void 0 || onLog(`HTTP Status: ${statusCode}`);
+      resolve(statusCode);
+    }, error => {
+      if (error.code === 'DEPTH_ZERO_SELF_SIGNED_CERT') onStdErr === null || onStdErr === void 0 || onStdErr(`[WebServer] Self-signed certificate detected. Try adding ignoreHTTPSErrors: true to config.webServer.`);
+      onLog === null || onLog === void 0 || onLog(`Error while checking if ${url} is available: ${error.message}`);
+      resolve(0);
+    });
+  });
 }
 function decorateServer(server) {
   const sockets = new Set();

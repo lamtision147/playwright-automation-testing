@@ -79,7 +79,7 @@ class BrowserType extends _channelOwner.ChannelOwner {
       ...this._defaultLaunchOptions,
       ...options
     };
-    return this._serverLauncher.launchServer(options);
+    return await this._serverLauncher.launchServer(options);
   }
   async launchPersistentContext(userDataDir, options = {}) {
     var _this$_defaultLaunchO2;
@@ -107,12 +107,12 @@ class BrowserType extends _channelOwner.ChannelOwner {
     });
   }
   async connect(optionsOrWsEndpoint, options) {
-    if (typeof optionsOrWsEndpoint === 'string') return this._connect({
+    if (typeof optionsOrWsEndpoint === 'string') return await this._connect({
       ...options,
       wsEndpoint: optionsOrWsEndpoint
     });
     (0, _utils.assert)(optionsOrWsEndpoint.wsEndpoint, 'options.wsEndpoint is required');
-    return this._connect(optionsOrWsEndpoint);
+    return await this._connect(optionsOrWsEndpoint);
   }
   async _connect(params) {
     const logger = params.logger;
@@ -142,28 +142,36 @@ class BrowserType extends _channelOwner.ChannelOwner {
       connection.on('close', closePipe);
       let browser;
       let closeError;
-      const onPipeClosed = () => {
-        var _browser2;
+      const onPipeClosed = reason => {
         // Emulate all pages, contexts and the browser closing upon disconnect.
         for (const context of ((_browser = browser) === null || _browser === void 0 ? void 0 : _browser.contexts()) || []) {
           var _browser;
           for (const page of context.pages()) page._onClose();
           context._onClose();
         }
-        (_browser2 = browser) === null || _browser2 === void 0 ? void 0 : _browser2._didClose();
-        connection.close(closeError);
+        connection.close(reason || closeError);
+        // Give a chance to any API call promises to reject upon page/context closure.
+        // This happens naturally when we receive page.onClose and browser.onClose from the server
+        // in separate tasks. However, upon pipe closure we used to dispatch them all synchronously
+        // here and promises did not have a chance to reject.
+        // The order of rejects vs closure is a part of the API contract and our test runner
+        // relies on it to attribute rejections to the right test.
+        setTimeout(() => {
+          var _browser2;
+          return (_browser2 = browser) === null || _browser2 === void 0 ? void 0 : _browser2._didClose();
+        }, 0);
       };
-      pipe.on('closed', onPipeClosed);
-      connection.onmessage = message => pipe.send({
+      pipe.on('closed', params => onPipeClosed(params.reason));
+      connection.onmessage = message => this._wrapApiCall(() => pipe.send({
         message
-      }).catch(onPipeClosed);
+      }).catch(() => onPipeClosed()), /* isInternal */true);
       pipe.on('message', ({
         message
       }) => {
         try {
           connection.dispatch(message);
         } catch (e) {
-          closeError = e;
+          closeError = String(e);
           closePipe();
         }
       });
@@ -180,7 +188,7 @@ class BrowserType extends _channelOwner.ChannelOwner {
         this._didLaunchBrowser(browser, {}, logger);
         browser._shouldCloseConnectionOnClose = true;
         browser._connectHeaders = connectHeaders;
-        browser.on(_events.Events.Browser.Disconnected, closePipe);
+        browser.on(_events.Events.Browser.Disconnected, () => this._wrapApiCall(() => closePipe(), /* isInternal */true));
         return browser;
       }, deadline);
       if (!result.timedOut) {
@@ -191,11 +199,11 @@ class BrowserType extends _channelOwner.ChannelOwner {
       }
     });
   }
-  connectOverCDP(endpointURLOrOptions, options) {
-    if (typeof endpointURLOrOptions === 'string') return this._connectOverCDP(endpointURLOrOptions, options);
+  async connectOverCDP(endpointURLOrOptions, options) {
+    if (typeof endpointURLOrOptions === 'string') return await this._connectOverCDP(endpointURLOrOptions, options);
     const endpointURL = 'endpointURL' in endpointURLOrOptions ? endpointURLOrOptions.endpointURL : endpointURLOrOptions.wsEndpoint;
     (0, _utils.assert)(endpointURL, 'Cannot connect over CDP without wsEndpoint.');
-    return this.connectOverCDP(endpointURL, endpointURLOrOptions);
+    return await this.connectOverCDP(endpointURL, endpointURLOrOptions);
   }
   async _connectOverCDP(endpointURL, params = {}) {
     if (this.name() !== 'chromium') throw new Error('Connecting over CDP is only supported in Chromium.');
@@ -208,7 +216,7 @@ class BrowserType extends _channelOwner.ChannelOwner {
     });
     const browser = _browser3.Browser.from(result.browser);
     this._didLaunchBrowser(browser, {}, params.logger);
-    if (result.defaultContext) await this._didCreateContext(_browserContext.BrowserContext.from(result.defaultContext), {}, {}, undefined);
+    if (result.defaultContext) await this._didCreateContext(_browserContext.BrowserContext.from(result.defaultContext), {}, {}, params.logger);
     return browser;
   }
   _didLaunchBrowser(browser, browserOptions, logger) {
@@ -223,11 +231,11 @@ class BrowserType extends _channelOwner.ChannelOwner {
     context._setOptions(contextOptions, browserOptions);
     if (this._defaultContextTimeout !== undefined) context.setDefaultTimeout(this._defaultContextTimeout);
     if (this._defaultContextNavigationTimeout !== undefined) context.setDefaultNavigationTimeout(this._defaultContextNavigationTimeout);
-    await this._instrumentation.onDidCreateBrowserContext(context);
+    await this._instrumentation.runAfterCreateBrowserContext(context);
   }
   async _willCloseContext(context) {
     this._contexts.delete(context);
-    await this._instrumentation.onWillCloseBrowserContext(context);
+    await this._instrumentation.runBeforeCloseBrowserContext(context);
   }
 }
 exports.BrowserType = BrowserType;

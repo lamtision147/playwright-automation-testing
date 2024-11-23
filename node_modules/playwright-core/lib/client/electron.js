@@ -10,6 +10,7 @@ var _channelOwner = require("./channelOwner");
 var _clientHelper = require("./clientHelper");
 var _events = require("./events");
 var _jsHandle = require("./jsHandle");
+var _consoleMessage = require("./consoleMessage");
 var _waiter = require("./waiter");
 var _errors = require("./errors");
 let _Symbol$asyncDispose;
@@ -42,7 +43,7 @@ class Electron extends _channelOwner.ChannelOwner {
       tracesDir: options.tracesDir
     };
     const app = ElectronApplication.from((await this._channel.launch(params)).electronApplication);
-    app._context._options = params;
+    app._context._setOptions(params, options);
     return app;
   }
 }
@@ -57,14 +58,14 @@ class ElectronApplication extends _channelOwner.ChannelOwner {
     this._context = void 0;
     this._windows = new Set();
     this._timeoutSettings = new _timeoutSettings.TimeoutSettings();
-    this._isClosed = false;
     this._context = _browserContext.BrowserContext.from(initializer.context);
     for (const page of this._context._pages) this._onPage(page);
     this._context.on(_events.Events.BrowserContext.Page, page => this._onPage(page));
     this._channel.on('close', () => {
-      this._isClosed = true;
       this.emit(_events.Events.ElectronApplication.Close);
     });
+    this._channel.on('console', event => this.emit(_events.Events.ElectronApplication.Console, new _consoleMessage.ConsoleMessage(event)));
+    this._setEventToSubscriptionMapping(new Map([[_events.Events.ElectronApplication.Console, 'console']]));
   }
   process() {
     return this._toImpl().process();
@@ -80,7 +81,7 @@ class ElectronApplication extends _channelOwner.ChannelOwner {
   }
   async firstWindow(options) {
     if (this._windows.size) return this._windows.values().next().value;
-    return this.waitForEvent('window', options);
+    return await this.waitForEvent('window', options);
   }
   context() {
     return this._context;
@@ -89,11 +90,15 @@ class ElectronApplication extends _channelOwner.ChannelOwner {
     await this.close();
   }
   async close() {
-    if (this._isClosed) return;
-    await this._channel.close().catch(() => {});
+    try {
+      await this._context.close();
+    } catch (e) {
+      if ((0, _errors.isTargetClosedError)(e)) return;
+      throw e;
+    }
   }
   async waitForEvent(event, optionsOrPredicate = {}) {
-    return this._wrapApiCall(async () => {
+    return await this._wrapApiCall(async () => {
       const timeout = this._timeoutSettings.timeout(typeof optionsOrPredicate === 'function' ? {} : optionsOrPredicate);
       const predicate = typeof optionsOrPredicate === 'function' ? optionsOrPredicate : optionsOrPredicate.predicate;
       const waiter = _waiter.Waiter.createForEvent(this, event);

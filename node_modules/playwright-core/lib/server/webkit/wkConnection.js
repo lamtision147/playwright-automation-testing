@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.kPageProxyMessageReceived = exports.kBrowserCloseMessageId = exports.WKSession = exports.WKConnection = void 0;
 var _events = require("events");
 var _utils = require("../../utils");
-var _debugLogger = require("../../common/debugLogger");
+var _debugLogger = require("../../utils/debugLogger");
 var _helper = require("../helper");
 var _protocolError = require("../protocolError");
 /**
@@ -32,7 +32,7 @@ const kBrowserCloseMessageId = exports.kBrowserCloseMessageId = -9999;
 
 // We emulate kPageProxyMessageReceived message to unify it with Browser.pageProxyCreated
 // and Browser.pageProxyDestroyed for easier management.
-const kPageProxyMessageReceived = exports.kPageProxyMessageReceived = 'kPageProxyMessageReceived';
+const kPageProxyMessageReceived = exports.kPageProxyMessageReceived = Symbol('kPageProxyMessageReceived');
 class WKConnection {
   constructor(transport, onDisconnect, protocolLogger, browserLogsCollector) {
     this._transport = void 0;
@@ -77,11 +77,11 @@ class WKConnection {
     }
     this.browserSession.dispatchMessage(message);
   }
-  _onClose() {
+  _onClose(reason) {
     this._closed = true;
     this._transport.onmessage = undefined;
     this._transport.onclose = undefined;
-    this._browserDisconnectedLogs = _helper.helper.formatBrowserLogs(this._browserLogsCollector.recentLogs());
+    this._browserDisconnectedLogs = _helper.helper.formatBrowserLogs(this._browserLogsCollector.recentLogs(), reason);
     this.browserSession.dispose();
     this._onDisconnect();
   }

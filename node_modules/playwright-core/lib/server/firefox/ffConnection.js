@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.kBrowserCloseMessageId = exports.FFSession = exports.FFConnection = exports.ConnectionEvents = void 0;
 var _events = require("events");
-var _debugLogger = require("../../common/debugLogger");
+var _debugLogger = require("../../utils/debugLogger");
 var _helper = require("../helper");
 var _protocolError = require("../protocolError");
 /**
@@ -69,11 +69,11 @@ class FFConnection extends _events.EventEmitter {
     const session = this._sessions.get(message.sessionId || '');
     if (session) session.dispatchMessage(message);
   }
-  _onClose() {
+  _onClose(reason) {
     this._closed = true;
     this._transport.onmessage = undefined;
     this._transport.onclose = undefined;
-    this._browserDisconnectedLogs = _helper.helper.formatBrowserLogs(this._browserLogsCollector.recentLogs());
+    this._browserDisconnectedLogs = _helper.helper.formatBrowserLogs(this._browserLogsCollector.recentLogs(), reason);
     this.rootSession.dispose();
     Promise.resolve().then(() => this.emit(ConnectionEvents.Disconnected));
   }
