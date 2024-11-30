@@ -36,3 +36,550 @@
 [2024-11-23T10:05:43.633Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
 [2024-11-23T10:05:43.633Z] ====> Credits validation PASSED
 
+[2024-11-23T16:12:08.783Z] Actual status code '/api/v2/addresses': 200
+[2024-11-23T16:12:09.874Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-23T16:12:14.037Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-23T16:12:15.334Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-23T16:12:20.157Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-23T16:12:24.339Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-23T16:12:29.246Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-23T16:12:31.621Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-23T16:12:36.062Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-23T16:12:40.480Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-23T16:12:45.451Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-23T16:12:47.811Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-23T16:12:50.182Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-23T16:12:51.924Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-23T16:12:53.779Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-23T16:12:55.680Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-23T16:12:58.083Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-23T16:13:00.034Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-23T16:13:06.719Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-23T16:13:10.353Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-23T16:13:15.731Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-23T16:13:20.954Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-23T16:13:24.547Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-23T16:13:27.669Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-23T16:15:10.938Z] Actual status code '/api/v2/token/ibc': 524 Undocumented 
+[2024-11-23T16:15:14.953Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-23T16:15:18.448Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-23T16:15:21.676Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-23T16:15:25.866Z] Actual status code '/api/v2/token/native': 200
+[2024-11-23T16:15:28.743Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-23T16:15:32.817Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-23T16:15:36.741Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-23T16:15:48.298Z] (Before) Credits: 691953855
+[2024-11-23T16:15:48.299Z] Total credit used: 2600
+[2024-11-23T16:15:48.299Z] (After) Credits: 691951255
+[2024-11-23T16:15:48.299Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-23T16:15:48.299Z] ====> Credits validation PASSED
+
+[2024-11-23T16:45:55.532Z] Actual status code '/api/v2/addresses': 200
+[2024-11-23T16:45:56.628Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-23T16:45:57.894Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-23T16:45:59.195Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-23T16:46:00.388Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-23T16:46:01.608Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-23T16:46:02.931Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-23T16:46:04.391Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-23T16:46:05.920Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-23T16:46:07.444Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-23T16:46:08.242Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-23T16:46:12.623Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-23T16:46:13.699Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-23T16:46:17.942Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-23T16:46:22.667Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-23T16:46:23.926Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-23T16:46:28.063Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-23T16:46:33.856Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-23T16:46:38.612Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-23T16:46:42.548Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-23T16:46:46.413Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-23T16:46:50.149Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-23T16:46:52.433Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-23T16:46:56.099Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-23T16:47:00.132Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-23T16:47:02.164Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-23T16:47:05.617Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-23T16:47:07.724Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-23T16:47:10.011Z] Actual status code '/api/v2/token/native': 200
+[2024-11-23T16:47:13.758Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-23T16:47:16.617Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-23T16:47:20.423Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-23T16:47:31.124Z] (Before) Credits: 691951255
+[2024-11-23T16:47:31.124Z] Total credit used: 2600
+[2024-11-23T16:47:31.124Z] (After) Credits: 691948655
+[2024-11-23T16:47:31.124Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-23T16:47:31.125Z] ====> Credits validation PASSED
+
+[2024-11-25T05:26:30.724Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T05:26:31.790Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T05:26:33.430Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T05:26:34.779Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T05:26:39.559Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T05:26:40.298Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T05:26:44.584Z] Actual status code '/api/v2/token/erc721/instances': 524 Undocumented
+[2024-11-25T05:26:46.190Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T05:26:51.408Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T05:26:53.138Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T05:26:54.027Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T05:26:57.086Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T05:27:02.078Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T05:27:05.498Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T05:27:11.271Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T05:27:19.513Z] (Before) Credits: 691946605
+[2024-11-25T05:27:19.514Z] Total credit used: 1250
+[2024-11-25T05:27:19.514Z] (After) Credits: 691945355
+[2024-11-25T05:27:19.514Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T05:27:19.514Z] ====> Credits validation PASSED
+
+[2024-11-25T06:57:48.401Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T06:57:49.028Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T06:57:51.106Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T06:57:52.908Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T06:57:54.619Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T06:57:55.816Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T06:57:57.192Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-25T06:57:59.515Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T06:58:01.410Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T06:58:06.594Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T06:58:07.790Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T06:58:12.192Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T06:58:16.749Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T06:58:18.995Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T06:58:21.028Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T06:58:24.496Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-25T06:58:28.618Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-25T06:58:33.032Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-25T06:58:36.787Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-25T06:58:38.652Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-25T06:58:44.419Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-25T06:58:51.491Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-25T06:58:53.786Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-25T06:58:57.476Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-25T07:00:40.439Z] Actual status code '/api/v2/token/ibc': 524 Undocumented 
+[2024-11-25T07:00:44.482Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-25T07:00:48.648Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-25T07:00:52.620Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-25T07:01:01.380Z] Actual status code '/api/v2/token/native': 200
+[2024-11-25T07:01:04.805Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-25T07:01:08.306Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-25T07:01:12.841Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-25T07:01:24.445Z] (Before) Credits: 691944005
+[2024-11-25T07:01:24.446Z] Total credit used: 2600
+[2024-11-25T07:01:24.446Z] (After) Credits: 691941405
+[2024-11-25T07:01:24.446Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T07:01:24.446Z] ====> Credits validation PASSED
+
+[2024-11-25T07:51:12.877Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T07:51:15.204Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T07:51:16.339Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T07:51:20.025Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T07:51:23.645Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T07:51:27.250Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T07:51:30.980Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-25T07:51:34.820Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T07:51:38.848Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T07:51:42.811Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T07:51:46.536Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T07:51:50.389Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T07:51:54.387Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T07:51:58.575Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T07:52:03.377Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T07:52:04.627Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-25T07:52:09.436Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-25T07:52:11.749Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-25T07:52:15.028Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-25T07:52:16.371Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-25T07:52:21.874Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-25T07:52:26.754Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-25T07:52:30.491Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-25T07:52:32.692Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-25T07:52:36.179Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-25T07:52:38.279Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-25T07:52:41.431Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-25T07:52:43.178Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-25T07:52:51.946Z] Actual status code '/api/v2/token/native': 200
+[2024-11-25T07:52:54.218Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-25T07:52:57.060Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-25T07:53:00.684Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-25T07:53:12.043Z] (Before) Credits: 691938755
+[2024-11-25T07:53:12.043Z] Total credit used: 2600
+[2024-11-25T07:53:12.043Z] (After) Credits: 691936155
+[2024-11-25T07:53:12.043Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T07:53:12.044Z] ====> Credits validation PASSED
+
+[2024-11-25T07:53:44.038Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T07:53:44.880Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T07:53:45.886Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T07:53:47.051Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T07:53:50.658Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T07:53:54.206Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T07:53:57.947Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-25T07:54:01.810Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T07:54:05.727Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T07:54:09.493Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T07:54:13.195Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T07:54:17.073Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T07:54:21.040Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T07:54:25.226Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T07:54:29.539Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T07:54:33.619Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-25T07:54:37.843Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-25T07:54:41.300Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-25T07:54:45.603Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-25T07:54:48.181Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-25T07:54:53.746Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-25T07:54:59.123Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-25T07:55:01.411Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-25T07:55:03.301Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-25T07:55:07.682Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-25T07:55:09.696Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-25T07:55:13.283Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-25T07:55:15.030Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-25T07:55:17.333Z] Actual status code '/api/v2/token/native': 200
+[2024-11-25T07:55:20.694Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-25T07:55:23.552Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-25T07:55:26.626Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-25T07:55:37.475Z] (Before) Credits: 691936155
+[2024-11-25T07:55:37.476Z] Total credit used: 2600
+[2024-11-25T07:55:37.476Z] (After) Credits: 691933555
+[2024-11-25T07:55:37.476Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T07:55:37.476Z] ====> Credits validation PASSED
+
+[2024-11-25T07:56:20.332Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T07:56:20.852Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T07:56:21.958Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T07:56:24.477Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T07:56:28.113Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T07:56:31.693Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T07:56:35.422Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-25T07:56:39.314Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T07:56:43.399Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T07:56:46.326Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T07:56:50.032Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T07:56:53.878Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T07:56:57.899Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T07:57:02.123Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T07:57:07.809Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T07:57:08.911Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-25T07:57:12.746Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-25T07:57:16.595Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-25T07:57:19.876Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-25T07:57:21.223Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-25T07:57:26.430Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-25T07:57:29.929Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-25T07:57:35.048Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-25T07:57:37.377Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-25T07:57:40.518Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-25T07:57:43.886Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-25T07:57:47.017Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-25T07:57:48.964Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-25T07:57:51.189Z] Actual status code '/api/v2/token/native': 200
+[2024-11-25T07:57:55.100Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-25T07:57:58.102Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-25T07:58:01.295Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-25T07:58:12.544Z] (Before) Credits: 691933555
+[2024-11-25T07:58:12.544Z] Total credit used: 2600
+[2024-11-25T07:58:12.544Z] (After) Credits: 691930955
+[2024-11-25T07:58:12.544Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T07:58:12.544Z] ====> Credits validation PASSED
+
+[2024-11-25T11:36:12.303Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T11:36:12.952Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T11:36:14.054Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T11:36:17.153Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T11:36:17.901Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T11:36:21.613Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T11:36:25.479Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-25T11:36:27.338Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T11:36:28.544Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T11:36:33.444Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T11:36:35.525Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T11:36:39.458Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T11:36:43.488Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T11:36:49.724Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T11:36:53.479Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T11:36:56.864Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-25T11:37:00.548Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-25T11:37:04.301Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-25T11:37:07.564Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-25T11:37:10.952Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-25T11:37:14.933Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-25T11:37:19.030Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-25T11:37:22.567Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-25T11:37:24.762Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-25T11:39:06.654Z] Actual status code '/api/v2/token/ibc': 524 Undocumented 
+[2024-11-25T11:39:10.494Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-25T11:39:13.323Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-25T11:39:15.960Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-25T11:39:23.072Z] Actual status code '/api/v2/token/native': 200
+[2024-11-25T11:39:27.561Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-25T11:39:32.885Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-25T11:39:37.831Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-25T11:39:49.710Z] (Before) Credits: 691930955
+[2024-11-25T11:39:49.711Z] Total credit used: 2600
+[2024-11-25T11:39:49.711Z] (After) Credits: 691928355
+[2024-11-25T11:39:49.711Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T11:39:49.711Z] ====> Credits validation PASSED
+
+[2024-11-25T14:34:18.170Z] Actual status code '/api/v2/addresses': 200
+[2024-11-25T14:34:19.297Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-25T14:34:20.571Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-25T14:34:21.935Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-25T14:34:26.822Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-25T14:34:31.110Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-25T14:34:34.828Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-25T14:34:41.316Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-25T14:34:45.376Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-25T14:34:48.658Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-25T14:34:51.620Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-25T14:34:56.298Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-25T14:35:00.882Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-25T14:35:02.369Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-25T14:35:08.016Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-25T14:35:09.170Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-25T14:35:14.115Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-25T14:35:17.639Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-25T14:35:21.284Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-25T14:35:22.749Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-25T14:35:27.664Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-25T14:35:33.057Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-25T14:35:36.868Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-25T14:35:39.161Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-25T14:37:29.587Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-25T14:37:34.889Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-25T14:37:36.301Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-25T14:37:37.346Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-25T14:37:41.990Z] Actual status code '/api/v2/token/native': 200
+[2024-11-25T14:37:44.943Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-25T14:37:48.381Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-25T14:37:49.732Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-25T14:38:00.749Z] (Before) Credits: 691928355
+[2024-11-25T14:38:00.749Z] Total credit used: 2600
+[2024-11-25T14:38:00.749Z] (After) Credits: 691925705
+[2024-11-25T14:38:00.750Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-25T14:38:00.750Z] ====> Credits validation FAILED
+
+[2024-11-26T04:33:12.060Z] Actual status code '/api/v2/addresses': 200
+[2024-11-26T04:33:14.482Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-26T04:33:16.903Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-26T04:33:18.093Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-26T04:33:21.672Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-26T04:33:25.243Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-26T04:33:29.029Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-26T04:33:33.321Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-26T04:33:38.119Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-26T04:33:41.674Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-26T04:33:45.444Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-26T04:33:50.042Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-26T04:33:54.021Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-26T04:34:00.587Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-26T04:34:04.905Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-26T04:34:08.886Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-26T04:34:13.751Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-26T04:34:17.603Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-26T04:34:20.822Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-26T04:34:24.344Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-26T04:34:28.984Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-26T04:34:35.468Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-26T04:34:37.850Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-26T04:34:39.695Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-26T04:36:33.025Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-26T04:36:33.766Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-26T04:36:34.793Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-26T04:36:38.990Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-26T04:36:43.118Z] Actual status code '/api/v2/token/native': 200
+[2024-11-26T04:36:45.440Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-26T04:36:48.378Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-26T04:36:50.123Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-26T04:37:00.936Z] (Before) Credits: 691925705
+[2024-11-26T04:37:00.936Z] Total credit used: 2600
+[2024-11-26T04:37:00.936Z] (After) Credits: 691923055
+[2024-11-26T04:37:00.936Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-26T04:37:00.936Z] ====> Credits validation FAILED
+
+[2024-11-26T04:47:22.037Z] Actual status code '/api/v2/addresses': 200
+[2024-11-26T04:47:22.945Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-26T04:47:23.965Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-26T04:47:27.646Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-26T04:47:31.280Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-26T04:47:33.567Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-26T04:47:37.258Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-26T04:47:41.160Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-26T04:47:45.172Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-26T04:47:48.930Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-26T04:47:52.619Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-26T04:47:58.551Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-26T04:48:02.508Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-26T04:48:06.216Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-26T04:48:08.021Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-26T04:48:09.025Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-26T04:48:12.875Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-26T04:48:15.213Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-26T04:48:18.509Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-26T04:48:20.892Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-26T04:48:25.557Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-26T04:48:30.642Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-26T04:48:32.716Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-26T04:48:35.457Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-26T04:48:39.065Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-26T04:48:41.004Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-26T04:48:44.104Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-26T04:48:45.888Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-26T04:48:48.135Z] Actual status code '/api/v2/token/native': 200
+[2024-11-26T04:48:52.112Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-26T04:48:55.135Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-26T04:48:58.619Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-26T04:49:09.965Z] (Before) Credits: 691923055
+[2024-11-26T04:49:09.966Z] Total credit used: 2600
+[2024-11-26T04:49:09.966Z] (After) Credits: 691920455
+[2024-11-26T04:49:09.966Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-26T04:49:09.966Z] ====> Credits validation PASSED
+
+[2024-11-27T04:51:16.702Z] Actual status code '/api/v2/addresses': 200
+[2024-11-27T04:51:17.611Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-27T04:51:20.095Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-27T04:51:21.265Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-27T04:51:24.958Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-27T04:51:28.491Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-27T04:51:32.258Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-27T04:51:36.177Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-27T04:51:41.149Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-27T04:51:44.999Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-27T04:51:48.723Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-27T04:51:52.531Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-27T04:51:55.240Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-27T04:51:58.864Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-27T04:52:04.369Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-27T04:52:09.146Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-27T04:52:11.412Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-27T04:52:15.396Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-27T04:52:18.602Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-27T04:52:20.858Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-27T04:52:25.685Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-27T04:52:30.893Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-27T04:52:34.835Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-27T04:52:37.479Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-27T04:52:41.218Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-27T04:52:44.945Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-27T04:52:47.252Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-27T04:52:49.579Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-27T04:52:52.538Z] Actual status code '/api/v2/token/native': 200
+[2024-11-27T04:52:56.799Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-27T04:53:02.242Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-27T04:53:06.241Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-27T04:53:17.623Z] (Before) Credits: 691920455
+[2024-11-27T04:53:17.623Z] Total credit used: 2600
+[2024-11-27T04:53:17.623Z] (After) Credits: 691917855
+[2024-11-27T04:53:17.623Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-27T04:53:17.623Z] ====> Credits validation PASSED
+
+[2024-11-28T04:21:31.193Z] Actual status code '/api/v2/addresses': 200
+[2024-11-28T04:21:31.799Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-28T04:21:32.956Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-28T04:21:36.041Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-28T04:21:36.779Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-28T04:21:39.147Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-28T04:21:43.427Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-28T04:21:44.497Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-28T04:21:48.975Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-28T04:21:50.081Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-28T04:21:53.885Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-28T04:21:57.886Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-28T04:22:02.406Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-28T04:22:03.766Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-28T04:22:08.507Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-28T04:22:09.801Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-28T04:22:12.107Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-28T04:22:15.956Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-28T04:22:20.496Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-28T04:22:24.126Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-28T04:22:27.520Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-28T04:22:32.722Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-28T04:22:34.997Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-28T04:22:38.645Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-28T04:23:52.547Z] Actual status code '/api/v2/token/ibc':  Undocumented 
+[2024-11-28T04:23:57.025Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-28T04:24:10.702Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-28T04:24:12.936Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-28T04:25:21.207Z] Actual status code '/api/v2/token/native': 200
+[2024-11-28T04:25:25.174Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-28T04:25:28.324Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-28T04:25:32.156Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-28T04:25:43.976Z] (Before) Credits: 691917855
+[2024-11-28T04:25:43.978Z] Total credit used: 2600
+[2024-11-28T04:25:43.979Z] (After) Credits: 691915255
+[2024-11-28T04:25:43.979Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-28T04:25:43.979Z] ====> Credits validation PASSED
+
+[2024-11-29T01:54:11.022Z] Actual status code '/api/v2/addresses': 200
+[2024-11-29T01:54:11.599Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-29T01:54:14.076Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-29T01:54:16.672Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-29T01:54:20.287Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-29T01:54:23.860Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-29T01:54:27.550Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-29T01:54:31.398Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-29T01:54:35.478Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-29T01:54:39.352Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-29T01:54:43.021Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-29T01:54:46.798Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-29T01:54:50.817Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-29T01:54:54.956Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-29T01:54:59.652Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-29T01:55:00.711Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-29T01:55:05.519Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-29T01:55:09.382Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-29T01:55:12.581Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-29T01:55:14.878Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-29T01:55:20.431Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-29T01:55:25.368Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-29T01:55:27.614Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-29T01:55:29.473Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-29T01:56:40.578Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-29T01:56:43.077Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-29T01:56:44.128Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-29T01:56:48.333Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-29T01:56:58.067Z] Actual status code '/api/v2/token/native': 200
+[2024-11-29T01:57:00.852Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-29T01:57:03.725Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-29T01:57:06.429Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-29T01:58:31.834Z] Actual status code '/api/v2/addresses': 200
+[2024-11-29T01:58:32.461Z] Actual status code '/api/v2/token/erc20': 200
+[2024-11-29T01:58:33.588Z] Actual status code '/api/v2/token/erc20/balances': 200
+[2024-11-29T01:58:35.269Z] Actual status code '/api/v2/token/erc20/transfers': 200
+[2024-11-29T01:58:36.497Z] Actual status code '/api/v2/token/erc20/holders': 200
+[2024-11-29T01:58:37.342Z] Actual status code '/api/v2/token/erc721': 200
+[2024-11-29T01:58:39.946Z] Actual status code '/api/v2/token/erc721/instances': 200
+[2024-11-29T01:58:44.320Z] Actual status code '/api/v2/token/erc721/balances': 200
+[2024-11-29T01:58:45.905Z] Actual status code '/api/v2/token/erc721/transfers': 200
+[2024-11-29T01:58:46.939Z] Actual status code '/api/v2/token/erc721/holders': 200
+[2024-11-29T01:58:50.751Z] Actual status code '/api/v2/token/erc1155': 200
+[2024-11-29T01:58:54.762Z] Actual status code '/api/v2/token/erc1155/instances': 200
+[2024-11-29T01:58:58.818Z] Actual status code '/api/v2/token/erc1155/holders': 200
+[2024-11-29T01:59:03.447Z] Actual status code '/api/v2/token/erc1155/balances': 200
+[2024-11-29T01:59:05.302Z] Actual status code '/api/v2/token/erc1155/transfers': 200
+[2024-11-29T01:59:06.448Z] Actual status code '/api/v2/token/cw20': 200
+[2024-11-29T01:59:11.273Z] Actual status code '/api/v2/token/cw20/balances': 200
+[2024-11-29T01:59:13.640Z] Actual status code '/api/v2/token/cw20/transfers': 200
+[2024-11-29T01:59:17.733Z] Actual status code '/api/v2/token/cw20/holders': 200
+[2024-11-29T01:59:20.960Z] Actual status code '/api/v2/token/cw721': 200
+[2024-11-29T01:59:25.302Z] Actual status code '/api/v2/token/cw721/instances': 200
+[2024-11-29T01:59:31.708Z] Actual status code '/api/v2/token/cw721/balances': 200
+[2024-11-29T01:59:34.046Z] Actual status code '/api/v2/token/cw721/transfers': 200
+[2024-11-29T01:59:37.058Z] Actual status code '/api/v2/token/cw721/holders': 200
+[2024-11-29T01:59:40.000Z] Actual status code '/api/v2/token/ibc': 200
+[2024-11-29T01:59:43.546Z] Actual status code '/api/v2/token/ibc/balances': 200
+[2024-11-29T01:59:46.654Z] Actual status code '/api/v2/token/ibc/transfers': 200
+[2024-11-29T01:59:48.500Z] Actual status code '/api/v2/token/ibc/holders': 200
+[2024-11-29T01:59:52.220Z] Actual status code '/api/v2/token/native': 200
+[2024-11-29T01:59:56.042Z] Actual status code '/api/v2/token/native/balances': 200
+[2024-11-29T01:59:59.168Z] Actual status code '/api/v2/token/native/transfers': 200
+[2024-11-29T02:00:02.945Z] Actual status code '/api/v2/token/native/holders': 200
+[2024-11-29T02:00:14.124Z] (Before) Credits: 691912555
+[2024-11-29T02:00:14.125Z] Total credit used: 2600
+[2024-11-29T02:00:14.125Z] (After) Credits: 691909955
+[2024-11-29T02:00:14.125Z] API-Key Used: 477fc9a5-53ad-4248-84e9-46477dbf7c64 (from email: nhien0985@gmail.com)
+[2024-11-29T02:00:14.125Z] ====> Credits validation PASSED
+
