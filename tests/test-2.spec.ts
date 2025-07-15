@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('test1', async ({ page }) => {
   // Recording...
 });
